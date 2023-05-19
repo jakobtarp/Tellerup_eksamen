@@ -4,7 +4,6 @@ import "../styles/tokens.css";
 import Header from "../components/Header.astro";
 
 import Footer from "../components/Footer.astro";
-import Nav from "../components/Nav.astro";
 const { title, hasSearch } = Astro.props;
 ---
 
@@ -20,7 +19,7 @@ const { title, hasSearch } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>{title}</title>
   </head>
-  <Nav />
+
   <body class="bg-grey-100">
     <Header hasSearch={hasSearch} />
     <main class="">
