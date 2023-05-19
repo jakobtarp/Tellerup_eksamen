@@ -20,9 +20,9 @@ const { title, hasSearch } = Astro.props;
     <title>{title}</title>
   </head>
 
-  <body class="bg-grey-100">
+  <body>
     <Header hasSearch={hasSearch} />
-    <main class="">
+    <main>
       <slot />
     </main>
   </body>
