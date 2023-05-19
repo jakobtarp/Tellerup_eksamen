@@ -62,13 +62,16 @@ p {
  * Generated on Wed, 03 May 2023 13:41:44 GMT
  */
 
-body {
-  background-color: var(--defaultBgColor);
-}
 
+
+ /* Original Faraos */
+/* body {
+  background-color: var(--defaultBgColor);
+} */
+/* 
 :root {
-  --red: #f2474b; /* Udsolgt / Nyhed / Tilbudspris */
-  --green: #23bc70; /* Kurv / På lager */
+  --red: #f2474b;
+  --green: #23bc70; 
   --black: #0e0f11;
   --red: #f2474b;
   --white: #ffffff;
@@ -166,4 +169,4 @@ body {
   --3xlFontSize: 34.18px;
   --secondaryYSpacing: 12px;
   --cardBgColor: #ffffff;
-}
+} */
