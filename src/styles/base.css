@@ -1,4 +1,4 @@
-body {
+/* body {
   line-height: max(1.6em, 1em + 1ex);
 
   font-family: system-ui, sans-serif;
@@ -21,4 +21,4 @@ body > :is(header, main, footer) {
   border-radius: 1e5px;
   background: var(--cta-bg);
   color: #fff;
-}
+} */

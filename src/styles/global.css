@@ -1,7 +1,125 @@
-/* @layer reset,
-base,
-theme;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 
-@import "./reset.css" layer(reset);
-@import "./base.css" layer(base);
-@import "./tokens.css" layer(theme); */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+body {
+    background-color: var(--defaultBgColor);
+    font-family: var(--globalFont-family);
+}
+
+:root {
+/** Border-Radius */
+--globalBorderRadiusSm: 15px;
+--globalBorderRadiusMd: 20px;
+--globalBorderRadiusL: 30px;
+
+/** Shadow */
+box-shadow: 0px 4px 4px 0px #00000040;
+
+/* Font family */
+--globalFont-family: Montserrat;
+
+/** Font-Size */
+--fontSizeDesktopSm: 12px;
+/* --fontSizeDesktopBase: 14px; */
+--fontSizeDesktopMd: 14px;
+--fontSizeDesktopML: 31px;
+--fontSizeDesktopL: 34px;
+
+--fontSizeMobileSm: 13px;
+--fontSizeMobileBase: 16px;
+--fontSizeMobileMd: 20px;
+--fontSizeMobileML: 25px;
+--fontSizeMobileL: 31px;
+
+/* Font weight */
+--fontNormal: 400;
+--fontSemibold: 600;
+--fontBold: 700;
+
+/* Line height */
+--primaryLineHeight: 23px;
+--secondaryLineHeight: 30px;
+--tertiaryLineHeight: 41px;
+--lineHeightXL: 55px;
+
+/* Text decoration */
+--textNone: none;
+--textUnderline: underline;
+--textLineThrough: line-through;
+
+/* Colorpalette */
+--defaultBgColor: #fff;
+--white: #fff;
+--black: #000;
+
+--vanilla: #F6F4F0;
+--darkvanilla: #DFD3C7;
+--green: #00c154;
+--darkgreen: #5B7F58;
+--lightblue: #BBDBF3;
+--lighterblue: #C4DDF1;
+--middleblue: #5D7791;
+--darkerblue: #071522;
+--royalblue: #113759;
+--lightgrey: #898989;
+--bluegrey: #465A6F;
+--darkgrey: #667085;
+--orange: #BD492F;
+--darkOrange: #8F3C26;
+
+--headerblue: #A1BFD7;
+--colorPlaceholder: #989898;
+/* primary btn */ 
+--ctaPrimaryBgColor: #BD492F;
+--ctaPrimaryTextColor: #ffffff;
+--ctaPrimaryBorderRadius: 20px;
+--ctaPrimaryWidth: 190px;
+--ctaPrimaryHeight: 55px;
+
+/* seconday btn */ 
+--ctaSecondaryBgColor: #ffffff;
+--ctaSecondaryBorderColor: #BD492F;
+--ctaSecondaryBorderRadius: 20px;
+--ctaSecondaryTextColor: #BD492F;
+--ctaSecondaryWidth: 277px;
+--ctaSecondaryHeight: 51px;
+
+/* tertiary btn */ 
+--ctaTertiaryBgColor: #ffffff;
+--ctaTertiaryBorderColor: none;
+--ctaTertiaryBorderRadius: 20px;
+--ctaTertiaryTextColor: #BD492F;
+--ctaTertiaryTextDecoration: underline;
+--ctaTertiaryWidth: auto;
+--ctaTertiaryHeight: auto;
+
+/* ghost btn */ 
+--ctaGhostTextColorOrange: #BD492F;
+--ctaGhostTextColorGreen: #5B7F58;
+--ctaGhostyWidth: auto;
+--ctaGhostHeight: auto;
+
+/* Hover */
+--btnAnimation: ease-in;
+--btnAnimation-timing-function: ease-out;
+--btnAnimation-duration: 200ms;
+
+/* Card */
+--cardBgColor: #ffffff;
+--cardMg: #E7E7E7;
+--cardBorderRadius: 15px;
+--CardWidth: 312px;
+--CardHeight: 458px;
+
+/* Card labels */
+--CardLabelBgColor: var(--middleblue);
+}
