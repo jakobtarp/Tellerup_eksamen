@@ -1,0 +1,177 @@
+---
+---
+
+<header>
+  <div class="banner">
+    <div>
+      <img src="" alt="" />
+      <h3>Levering: 1-3 hverdage</h3>
+    </div>
+    <div>
+      <h3>Trustpilot</h3>
+      <img src="" alt="" />
+    </div>
+    <h3>Gratis levering ved køb over 300 DKK</h3>
+  </div>
+  <div class="mainheader">
+    <a href="/index">
+      <img class="logo" src="public/tellerup_logo3_primaer.webp" alt="logo" />
+    </a>
+    <div class="searchbar">
+      <input type="text" id="searchInput" placeholder="Indtast søgetekst" />
+      <button onclick="search()">Søg</button>
+      <ul id="searchResults"></ul>
+    </div>
+    <div class="icons">
+      <a href="/profil">
+        <img src="" alt="user" />
+      </a>
+      <a href="/favoritter">
+        <img src="" alt="heart" />
+      </a>
+      <a href="/cart">
+        <img src="" alt="cart" />
+      </a>
+    </div>
+  </div>
+  <div class="navHeader">
+    <div class="navLeft">
+      <a href="">
+        <h2>Kategori</h2>
+        <img src="" alt="" />
+      </a>
+      <a href="">
+        <h2>Forfattere</h2>
+        <img src="" alt="" />
+      </a>
+      <a href="">
+        <h2>Aldergrupper</h2>
+        <img src="" alt="" />
+      </a>
+      <a href="">
+        <h2>Tilbud</h2>
+        <img src="" alt="" />
+      </a>
+    </div>
+    <div class="navRight">
+      <a href="">
+        <h2>Undervisningsmateriale</h2>
+        <img src="" alt="" />
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  *:focus {
+    outline: none;
+  }
+
+  h2,
+  h3,
+  p {
+    color: var(--white);
+  }
+  .banner {
+    background-color: var(--darkgreen);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1px 10px 1px 10px;
+  }
+  .mainheader {
+    background-color: var(--headerblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+    align-items: center;
+    text-align: center;
+    padding: 1px 10px 1px 10px;
+  }
+
+  .mainheader .logo {
+    width: 187px;
+    height: 78px;
+  }
+  .mainheader .searchbar {
+    display: flex;
+    width: 648px;
+    height: 36.55px;
+    place-content: center;
+  }
+
+  .mainheader input[type="text"] {
+    background-color: var(--white);
+    border-radius: var(--globalBorderRadiusL);
+    color: var(--colorPlaceholder);
+    width: 400px;
+    height: 36.55px;
+    padding: 10px;
+    border-style: none;
+  }
+
+  .mainheader .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .mainheader .icons img {
+    color: var(--black);
+    width: 38.64px;
+    height: 38.64px;
+  }
+  .navHeader {
+    width: 1728px;
+    height: 50px;
+    background-color: var(--lighterblue);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navHeader .navLeft {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: var(--black);
+  }
+  .navHeader .navLeft h2 {
+    font-weight: var(--fontBold);
+    font-size: var(--fontSizeDesktopMd);
+    color: var(--black);
+    text-decoration: none;
+  }
+  .navHeader .navRight {
+    font-weight: var(--fontBold);
+    font-size: var(--fontSizeDesktopMd);
+    color: var(--black);
+  }
+</style>
+
+<!-- <script>
+function search() {
+  var searchInput = document.getElementById('searchInput');
+  var searchResults = document.getElementById('searchResults');
+  var searchText = searchInput.value.toLowerCase();
+
+  // Nulstil tidligere resultater
+  searchResults.innerHTML = '';
+
+  // Udfør søgning
+  var items = ['Apple', 'Banana', 'Orange', 'Pineapple', 'Strawberry'];
+  var matchingItems = items.filter(function(item) {
+    return item.toLowerCase().indexOf(searchText) !== -1;
+  });
+
+  // Vis søgeresultater
+  matchingItems.forEach(function(item) {
+    var li = document.createElement('li');
+    li.textContent = item;
+    searchResults.appendChild(li);
+  });
+}
+
+</script> -->
