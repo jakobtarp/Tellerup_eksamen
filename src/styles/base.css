@@ -1,7 +1,6 @@
 body {
   line-height: max(1.6em, 1em + 1ex);
-
-  font-family: system-ui, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--defaultBgColor);
 }
 html,
