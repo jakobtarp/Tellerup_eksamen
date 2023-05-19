@@ -1,182 +1,174 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-
-
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 body {
-    background-color: var(--defaultBgColor);
-    font-family: var(--globalFont-family);
+  background-color: var(--defaultBgColor);
+  font-family: var(--globalFont-family);
 }
-
 
 /* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     --font-size-xs: clamp(0.44rem, 0.1vw + 0.42rem, 0.49rem);
-		--font-size-sm: clamp(0.55rem, 0.19vw + 0.5rem, 0.66rem);
-		--font-size-base: clamp(0.69rem, 0.34vw + 0.6rem, 0.88rem);
-		--font-size-md: clamp(0.86rem, 0.56vw + 0.72rem, 1.17rem);
-		--font-size-lg: clamp(1.07rem, 0.87vw + 0.86rem, 1.55rem);
-		--font-size-xl: clamp(1.34rem, 1.33vw + 1.01rem, 2.07rem);
-		--font-size-xxl: clamp(1.68rem, 1.97vw + 1.19rem, 2.76rem);
-        /** Border-Radius */
-        --globalBorderRadiusSm: 15px;
-        --globalBorderRadiusMd: 20px;
-        --globalBorderRadiusL: 30px;
+    --font-size-sm: clamp(0.55rem, 0.19vw + 0.5rem, 0.66rem);
+    --font-size-base: clamp(0.69rem, 0.34vw + 0.6rem, 0.88rem);
+    --font-size-md: clamp(0.86rem, 0.56vw + 0.72rem, 1.17rem);
+    --font-size-lg: clamp(1.07rem, 0.87vw + 0.86rem, 1.55rem);
+    --font-size-xl: clamp(1.34rem, 1.33vw + 1.01rem, 2.07rem);
+    --font-size-xxl: clamp(1.68rem, 1.97vw + 1.19rem, 2.76rem);
+    /** Border-Radius */
+    --globalBorderRadiusSm: 15px;
+    --globalBorderRadiusMd: 20px;
+    --globalBorderRadiusL: 30px;
   }
 }
 /* Fallback variables for browsers that don't support clamp */
 @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     --font-size-xs: 0.44rem;
-		--font-size-sm: 0.55rem;
-		--font-size-base: 0.69rem;
-		--font-size-md: 0.86rem;
-		--font-size-lg: 1.07rem;
-		--font-size-xl: 1.34rem;
-		--font-size-xxl: 1.68rem;
+    --font-size-sm: 0.55rem;
+    --font-size-base: 0.69rem;
+    --font-size-md: 0.86rem;
+    --font-size-lg: 1.07rem;
+    --font-size-xl: 1.34rem;
+    --font-size-xxl: 1.68rem;
   }
   @media screen and (min-width: 1280px) {
     :root {
       --font-size-xs: 0.49rem;
-			--font-size-sm: 0.66rem;
-			--font-size-base: 0.88rem;
-			--font-size-md: 1.17rem;
-			--font-size-lg: 1.55rem;
-			--font-size-xl: 2.07rem;
-			--font-size-xxl: 2.76rem;
+      --font-size-sm: 0.66rem;
+      --font-size-base: 0.88rem;
+      --font-size-md: 1.17rem;
+      --font-size-lg: 1.55rem;
+      --font-size-xl: 2.07rem;
+      --font-size-xxl: 2.76rem;
     }
   }
 }
 
-
-
-
-
-
 :root {
-/** Border-Radius */
---globalBorderRadiusSm: 15px;
---globalBorderRadiusMd: 20px;
---globalBorderRadiusL: 30px;
+  /** Border-Radius */
+  --globalBorderRadiusSm: 15px;
+  --globalBorderRadiusMd: 20px;
+  --globalBorderRadiusL: 30px;
 
-/* Padding */
---globalPaddingSm: 15px;
---globalPaddingMd: 20px;
---globalPaddingL: 30px;
+  /* Padding */
+  --globalPaddingSm: 15px;
+  --globalPaddingMd: 20px;
+  --globalPaddingL: 30px;
 
-/** Shadow */
-box-shadow: 0px 4px 4px 0px #00000040;
+  /** Shadow */
+  box-shadow: 0px 4px 4px 0px #00000040;
 
-/* Font family */
---globalFont-family: Montserrat;
+  /* Font family */
+  --globalFont-family: Montserrat;
 
-/** Font-Size */
---fontSizeDesktopSm: 12px;
-/* --fontSizeDesktopBase: 14px; */
---fontSizeDesktopMd: 14px;
---fontSizeDesktopML: 31px;
---fontSizeDesktopL: 34px;
+  /** Font-Size */
+  --fontSizeDesktopSm: 12px;
+  /* --fontSizeDesktopBase: 14px; */
+  --fontSizeDesktopMd: 14px;
+  --fontSizeDesktopML: 31px;
+  --fontSizeDesktopL: 34px;
 
---fontSizeMobileSm: 13px;
---fontSizeMobileBase: 16px;
---fontSizeMobileMd: 20px;
---fontSizeMobileML: 25px;
---fontSizeMobileL: 31px;
+  --fontSizeMobileSm: 13px;
+  --fontSizeMobileBase: 16px;
+  --fontSizeMobileMd: 20px;
+  --fontSizeMobileML: 25px;
+  --fontSizeMobileL: 31px;
 
-/* Font weight */
---fontNormal: 400;
---fontSemibold: 600;
---fontBold: 700;
+  /* Font weight */
+  --fontNormal: 400;
+  --fontSemibold: 600;
+  --fontBold: 700;
 
-/* Line height */
---primaryLineHeight: 23px;
---secondaryLineHeight: 30px;
---tertiaryLineHeight: 41px;
---lineHeightXL: 55px;
+  /* Line height */
+  --primaryLineHeight: 23px;
+  --secondaryLineHeight: 30px;
+  --tertiaryLineHeight: 41px;
+  --lineHeightXL: 55px;
 
-/* Text decoration */
---textNone: none;
---textUnderline: underline;
---textLineThrough: line-through;
+  /* Text decoration */
+  --textNone: none;
+  --textUnderline: underline;
+  --textLineThrough: line-through;
 
-/* Colorpalette */
---defaultBgColor: #fff;
---white: #fff;
---black: #000;
+  /* Colorpalette */
+  --defaultBgColor: #fff;
+  --white: #fff;
+  --black: #000;
 
---vanilla: #F6F4F0;
---darkvanilla: #DFD3C7;
---green: #00c154;
---darkgreen: #5B7F58;
---lightblue: #BBDBF3;
---lighterblue: #C4DDF1;
---middleblue: #5D7791;
---darkerblue: #071522;
---royalblue: #113759;
---lightgrey: #898989;
---bluegrey: #465A6F;
---darkgrey: #667085;
---orange: #BD492F;
---darkOrange: #8F3C26;
+  --vanilla: #f6f4f0;
+  --darkvanilla: #dfd3c7;
+  --green: #00c154;
+  --darkgreen: #5b7f58;
+  --lightblue: #bbdbf3;
+  --lighterblue: #c4ddf1;
+  --middleblue: #5d7791;
+  --darkerblue: #071522;
+  --royalblue: #113759;
+  --lightgrey: #898989;
+  --bluegrey: #465a6f;
+  --darkgrey: #667085;
+  --orange: #bd492f;
+  --darkOrange: #8f3c26;
 
---headerblue: #A1BFD7;
---colorPlaceholder: #989898;
-/* primary btn */ 
---ctaPrimaryBgColor: #BD492F;
---ctaPrimaryTextColor: #ffffff;
---ctaPrimaryBorderRadius: 20px;
---ctaPrimaryWidth: 190px;
---ctaPrimaryHeight: 55px;
---ctaHover: 110%;
+  --headerblue: #a1bfd7;
+  --colorPlaceholder: #989898;
+  /* primary btn */
+  --ctaPrimaryBgColor: #bd492f;
+  --ctaPrimaryTextColor: #ffffff;
+  --ctaPrimaryBorderRadius: 20px;
+  --ctaPrimaryWidth: 190px;
+  --ctaPrimaryHeight: 55px;
+  --ctaHover: 110%;
 
-/* seconday btn */ 
---ctaSecondaryBgColor: #ffffff;
---ctaSecondaryBorderColor: #BD492F;
---ctaSecondaryBorderRadius: 20px;
---ctaSecondaryTextColor: #BD492F;
---ctaSecondaryWidth: 277px;
---ctaSecondaryHeight: 51px;
---ctaHover: 110%;
+  /* seconday btn */
+  --ctaSecondaryBgColor: #ffffff;
+  --ctaSecondaryBorderColor: #bd492f;
+  --ctaSecondaryBorderRadius: 20px;
+  --ctaSecondaryTextColor: #bd492f;
+  --ctaSecondaryWidth: 277px;
+  --ctaSecondaryHeight: 51px;
+  --ctaHover: 110%;
 
-/* tertiary btn */ 
---ctaTertiaryBgColor: #ffffff;
---ctaTertiaryBorderColor: none;
---ctaTertiaryBorderRadius: 20px;
---ctaTertiaryTextColor: #BD492F;
---ctaTertiaryTextDecoration: underline;
---ctaTertiaryWidth: auto;
---ctaTertiaryHeight: auto;
---ctaHover: 110%;
+  /* tertiary btn */
+  --ctaTertiaryBgColor: #ffffff;
+  --ctaTertiaryBorderColor: none;
+  --ctaTertiaryBorderRadius: 20px;
+  --ctaTertiaryTextColor: #bd492f;
+  --ctaTertiaryTextDecoration: underline;
+  --ctaTertiaryWidth: auto;
+  --ctaTertiaryHeight: auto;
+  --ctaHover: 110%;
 
-/* ghost btn */ 
---ctaGhostTextColorOrange: #BD492F;
---ctaGhostTextColorGreen: #5B7F58;
---ctaGhostyWidth: auto;
---ctaGhostHeight: auto;
+  /* ghost btn */
+  --ctaGhostTextColorOrange: #bd492f;
+  --ctaGhostTextColorGreen: #5b7f58;
+  --ctaGhostyWidth: auto;
+  --ctaGhostHeight: auto;
 
-/* Hover */
---btnAnimation: ease-in;
---btnAnimation-timing-function: ease-out;
---btnAnimation-duration: 200ms;
---ctaHover: 110%;
+  /* Hover */
+  --btnAnimation: ease-in;
+  --btnAnimation-timing-function: ease-out;
+  --btnAnimation-duration: 200ms;
+  --ctaHover: 110%;
 
-/* Card */
---cardBgColor: #ffffff;
---cardMg: #E7E7E7;
---cardBorderRadius: 15px;
---CardWidth: 312px;
---CardHeight: 458px;
+  /* Card */
+  --cardBgColor: #ffffff;
+  --cardMg: #e7e7e7;
+  --cardBorderRadius: 15px;
+  --CardWidth: 312px;
+  --CardHeight: 458px;
 
-/* Card labels */
---CardLabelBgColor: var(--middleblue);
+  /* Card labels */
+  --CardLabelBgColor: var(--middleblue);
 }
