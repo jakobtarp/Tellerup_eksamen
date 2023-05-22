@@ -1,227 +1,133 @@
 ---
+import "../styles/global.css";
 import "../styles/tokens.css";
 import "../styles/base.css";
+import "../styles/reset.css";
+import Button from "../components/Button.astro";
+
 const { titel, imgPath, description, price, discount1, discount2, discount3, shipping, newBadge, link } = Astro.props;
 ---
 
-<div class="gradient">
-  <div class="w-[1280px] mx-auto">
-    <!-- <img class="h-20" src="/imgs/faraoslogo.png" alt="Faraos Logo" /><a href="/"></a> -->
-    <div class="">
-      <ul class="">
-        <div class="grid">
-          <a class="hover:scale-110 footerhead" ' href="/about">Butikker</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-        </div>
-        <div class="grid">
-          <a class="hover:scale-110 footerhead" ' href="/about">Kundeservice</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-        </div>
-        <div class="grid">
-          <a class="hover:scale-110 footerhead" ' href="/about">Services</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-        </div>
-        <div class="grid">
-          <a class="hover:scale-110 footerhead" ' href="/about">Om Faraos</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
-        </div>
-      </ul>
-      <div class="marginb">
-        <div class="grid grid-cols-3">
-          <div class="nyhedsbrev">
-            <a class="hover:scale-110 footerhead" href="/about">Tilmeld dig nyhedsbrevet</a>
-            <p class="footer">Tilmeld dig vores nyhedsbrev med konkurrencer, tilbud og nyheder. Du vælger selv, hvad du vil have nyt om.</p>
-            <div class="flex">
-              <div class="buttonsocial1 flex">
-                <a href={link} data-variant={"primary"}>
-                  <p>Nyhedsbrev</p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid col-start-3">
-            <div class="social">
-              <a class="hover:scale-110 footerhead" href="/about">Følg os her</a>
-              <p>Alt det nye om konkurrencer, events, tilbud og produkter. Følg os i dag, så er du altid opdateret.</p>
-            </div>
-            <div class="flex social">
-              <div class="buttonsocial flex">
-                <img class="h-6 mr-2" src="imgs/facebook.png" alt="" />
-                <a href={link} data-variant={"primary"}>
-                  <p>Facebook</p>
-                </a>
-              </div>
-              <div class="buttonsocial flex">
-                <img class="h-6 mr-2" src="imgs/twitter.png" alt="" />
-                <a href={link} data-variant={"primary"}>
-                  <p>Twitter</p>
-                </a>
-              </div>
-              <div class="buttonsocial flex">
-                <img class="h-6 mr-2" src="imgs/instagram.png" alt="" />
-                <a href={link} data-variant={"primary"}>
-                  <p>Instagram</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- <div class=""> --><!-- Nyhedsbrev sektion -->
+<article class="nyhedsbrev grid lg:flex justify-between spacing">
+  <div class="mt-5 mb-5">
+    <p class="tilmeld text-center lg:text-start">Tilmeld dig vores nyhedsbrev</p>
+    <p class="tilbud text-center lg:text-start">Vær den første til at modtage gode tilbud, inspiration og nyheder</p>
+  </div>
+  <div class="email flex mt-5 mb-5">
+    <div class="flex search mx-auto">
+      <img class="h-5 my-auto mr-1 justify-between" src="imgs/mail.webp" alt="" />
+      <input class="lg:w-[300px]" type="text" placeholder="eksempel@gmail" />
+    </div>
+    <button>Tilmeld dig</button>
+  </div>
+</article>
+
+<!-- Main footer sektion -->
+<article class="mainfooter justify-between spacing">
+  <div class="grid lg:grid-cols-3">
+    <div class="left mt-5 lg:mt-10">
+      <img class="w-44" src="imgs/tellerup_logo3_primaer.webp" alt="Tellerup logo" />
+      <p>Tellerup er et af de førende danske forlag med fokus på børne- og ungdomsbøger. Oprindeligt blev forlaget grundlagt i 1972 af skolelærer Kristian Tellerup. Han havde skrevet en sød lille historie om Preben Ræv, som intet forlag havde lyst til at udgive, og så gjorde han det selv! Preben Ræv blev forlagets logo – den hylende ræv – og bogen blev genudgivet i en 40-års- jubilæumsudgave i 2012.</p>
+      <div class="grid gap-2 mt-5">
+        <h2>Kontakt</h2>
+        <p>Telefon: (+45) 00 00 00 00</p>
+        <p>Email: info@tellerup.dk</p>
+        <p>Rævensvej 111, Rævløse 2200</p>
       </div>
     </div>
-
-    <div class="grid grid-cols-4 justify-between downfooter">
-      <div class="text-center my-auto">
-        <p>Faraos Cigarer Aps</p>
+    <div class="right lg:col-start-3 mt-5 mb-5 lg:mt-10">
+      <h2 class="">Sociale medier</h2>
+      <div class="flex gap-2 mt-1 sociale">
+        <img class="w-11" src="imgs/facebook.png" alt="" />
+        <img class="w-11" src="imgs/instagram.png" alt="" />
+        <img class="w-11" src="imgs/linkedin.png" alt="" />
       </div>
-      <div class="my-auto mx-auto">
-        <div class="flex gap-3">
-          <img class="h-6" src="imgs/location.png" alt="" />
-          <div class="grid">
-            <p>Skindergade 27</p>
-            <p>1159 København K</p>
-          </div>
+      <div class="grid lg:grid-cols-2 lg:mt-12 mt-8">
+        <div class="grid gap-3">
+          <h2>Sider</h2>
+          <p>Log ind</p>
+          <p>Bøger</p>
+          <p>Lydbøger</p>
+          <p>E-bøger</p>
+          <p>Undervisningsmateriale</p>
+        </div>
+        <div class="grid gap-3 mt-8 lg:mt-0">
+          <h2>Kundeservice</h2>
+          <p>Kontakt os</p>
+          <p>Privatlivspolitik</p>
+          <p>Cookiepolitik</p>
+          <p>Salgsbetingelser</p>
+          <p>Administer samtykke</p>
         </div>
       </div>
-      <div class="text-center my-auto mx-auto">
-        <div class="flex gap-3 mb-2">
-          <img class="w-6" src="imgs/phone.png" alt="" />
-          <p>33 32 22 11</p>
-        </div>
-        <div class="flex gap-3">
-          <img class="w-6" src="imgs/mail.png" alt="" />
-          <p>faraos@faraos.dk</p>
-        </div>
-      </div>
-      <div class="ml-10">
-        <img class="w-50" src="imgs/emaerket.png" alt="" />
-        <div class="flex">
-          <img class="w-9" src="imgs/visa.png" alt="" />
-          <img class="w-9" src="imgs/visaelectron.png" alt="" />
-          <img class="w-9" src="imgs/mastercard.png" alt="" />
-          <img class="w-9" src="imgs/faktura.png" alt="" />
-          <img class="w-9" src="imgs/dankort.png" alt="" />
-        </div>
+      <div class="pay h-7 flex justify-center mt-6 gap-1 mb-3">
+        <img src="imgs/visa.webp" alt="Visa" />
+        <img src="imgs/visaelectron.webp" alt="Visa Elektron" />
+        <img src="imgs/mastercard.webp" alt="Mastercard" />
+        <img src="imgs/gavekort.webp" alt="Gavekort" />
+        <img src="imgs/mobilpay.webp" alt="Mobilpay" />
+        <img src="imgs/dk.webp" alt="Dankort" />
       </div>
     </div>
   </div>
-</div>
-
+</article>
 <style>
-  .downfooter {
-    color: var(--secondaryTekstColor);
+  .spacing {
+    padding-left: var(--globalPaddingL);
+    padding-right: var(--globalPaddingL);
   }
-  .marginb {
-    margin-top: var(--5xl);
-    margin-bottom: var(--7xl);
-  }
-  .social {
-    margin-top: var(--2xl);
-  }
+  .search {
+    border-radius: var(--globalBorderRadiusL);
+    padding-right: var(--globalPaddingXl);
+    padding-left: 6px;
 
+    padding-bottom: ;
+    background-color: white;
+  }
   .nyhedsbrev {
-    margin-top: var(--2xl);
-  }
-  .gradient {
-    background: var(--gradientBgColor);
-    padding-bottom: var(--lg);
-    padding-top: var(--lg);
+    background-color: var(--middleblue);
   }
 
-  .footerhead {
-    font-family: var(--fontComic);
-    font-weight: var(--fontSemibold);
-    font-size: var(--xl);
-    margin-bottom: var(--xl);
-  }
-  ul {
-    display: flex;
-
-    justify-content: space-around;
+  .sociale img {
+    cursor: pointer;
   }
 
-  .footerpara {
-    font-family: var(----fontRoboto);
-    font-weight: ;
-    line-height: var(--tertiaryLineHeight);
-    font-size: var(--fontSm);
-    color: var(--secondaryTekstColor);
+  .right p:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 
-  .buttonsocial {
-    margin-right: 10px;
-    background-color: var(--ctaPrimaryBgColor);
-    padding-left: var(--lg);
-    padding-right: var(--3xl);
-    padding-top: var(--sm);
-    padding-bottom: var(--sm);
-    border-radius: var(--ctaPrimaryBorderRadius);
-    color: var(--ctaTertiaryBgColor);
-    font-family: var(--fontRoboto);
-    font-size: var(----baseFontSize);
+  h2 {
+    font-weight: var(--fontBold);
+    font-size: var(--font-size-md);
   }
 
-  .buttonsocial1 {
-    margin-top: var(--2xl);
-    background-color: var(--ctaPrimaryBgColor);
-    padding-left: var(--lg);
-    padding-right: var(--lg);
-    padding-top: var(--sm);
-    padding-bottom: var(--sm);
-    border-radius: var(--ctaPrimaryBorderRadius);
-    color: var(--ctaTertiaryBgColor);
-    font-family: var(--fontRoboto);
-    font-size: var(----baseFontSize);
+  p {
+    font-weight: var(--fontNormal);
+    font-size: var(--font-size-base);
+  }
+
+  input {
+    font-size: var(--font-size-base);
+  }
+
+  .tilmeld {
+    color: var(--white);
+    font-size: var(--font-size-md);
+    font-weight: var(--fontBold);
+  }
+
+  .tilbud {
+    color: var(--white);
+    font-size: var(--font-size-base);
+  }
+
+  button {
+    border-radius: 24px;
+  }
+
+  .mainfooter {
+    background-color: var(--lightblue);
   }
 </style>

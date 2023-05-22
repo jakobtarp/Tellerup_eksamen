@@ -1,6 +1,7 @@
-/* body {
+body {
   line-height: max(1.6em, 1em + 1ex);
-  font-family: "Montserrat", sans-serif;Zz
+
+  font-family: system-ui, sans-serif;
   background-color: var(--defaultBgColor);
 }
 html,
@@ -20,4 +21,4 @@ body > :is(header, main, footer) {
   border-radius: 1e5px;
   background: var(--cta-bg);
   color: #fff;
-} */
+}

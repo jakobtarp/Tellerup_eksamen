@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 img {
@@ -16,41 +15,38 @@ body {
 }
 
 /* Fluid font size variables, for browsers that support clamp */
+/* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
-    --font-size-xs: clamp(0.44rem, 0.1vw + 0.42rem, 0.49rem);
-    --font-size-sm: clamp(0.55rem, 0.19vw + 0.5rem, 0.66rem);
-    --font-size-base: clamp(0.69rem, 0.34vw + 0.6rem, 0.88rem);
-    --font-size-md: clamp(0.86rem, 0.56vw + 0.72rem, 1.17rem);
-    --font-size-lg: clamp(1.07rem, 0.87vw + 0.86rem, 1.55rem);
-    --font-size-xl: clamp(1.34rem, 1.33vw + 1.01rem, 2.07rem);
-    --font-size-xxl: clamp(1.68rem, 1.97vw + 1.19rem, 2.76rem);
-    /** Border-Radius */
-    --globalBorderRadiusSm: 15px;
-    --globalBorderRadiusMd: 20px;
-    --globalBorderRadiusL: 30px;
+    --font-size-sm: clamp(13px, 0vw + 12px, 14px);
+    --font-size-base: clamp(16px, 0vw + 15px, 19px);
+    --font-size-md: clamp(20px, 1vw + 18px, 25px);
+    --font-size-lg: clamp(25px, 1vw + 21px, 34px);
+    --font-size-xl: clamp(31px, 2vw + 25px, 45px);
+    --font-size-xxl: clamp(39px, 2vw + 30px, 60px);
+    --font-size-xxxl: clamp(49px, 4vw + 35px, 80px);
   }
 }
 /* Fallback variables for browsers that don't support clamp */
 @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
-    --font-size-xs: 0.44rem;
-    --font-size-sm: 0.55rem;
-    --font-size-base: 0.69rem;
-    --font-size-md: 0.86rem;
-    --font-size-lg: 1.07rem;
-    --font-size-xl: 1.34rem;
-    --font-size-xxl: 1.68rem;
+    --font-size-sm: 13px;
+    --font-size-base: 16px;
+    --font-size-md: 20px;
+    --font-size-lg: 25px;
+    --font-size-xl: 31px;
+    --font-size-xxl: 39px;
+    --font-size-xxxl: 49px;
   }
   @media screen and (min-width: 1280px) {
     :root {
-      --font-size-xs: 0.49rem;
-      --font-size-sm: 0.66rem;
-      --font-size-base: 0.88rem;
-      --font-size-md: 1.17rem;
-      --font-size-lg: 1.55rem;
-      --font-size-xl: 2.07rem;
-      --font-size-xxl: 2.76rem;
+      --font-size-sm: 14px;
+      --font-size-base: 19px;
+      --font-size-md: 25px;
+      --font-size-lg: 34px;
+      --font-size-xl: 45px;
+      --font-size-xxl: 60px;
+      --font-size-xxxl: 80px;
     }
   }
 }
@@ -62,8 +58,12 @@ body {
   --globalBorderRadiusL: 30px;
 
   /* Padding */
+  --globalPaddingXs: 10px;
   --globalPaddingSm: 15px;
   --globalPaddingMd: 20px;
+  --globalPaddingL: 30px;
+  --globalPaddingXl: 35px;
+
   --globalPaddingL: 30px;
 
   /** Shadow */
@@ -74,8 +74,7 @@ body {
 
   /** Font-Size */
   --fontSizeDesktopSm: 12px;
-  /* --fontSizeDesktopBase: 14px; */
-  --fontSizeDesktopMd: 14px;
+  /* --fontSizeDesktopMd: 14px;
   --fontSizeDesktopML: 31px;
   --fontSizeDesktopL: 34px;
 
@@ -83,7 +82,7 @@ body {
   --fontSizeMobileBase: 16px;
   --fontSizeMobileMd: 20px;
   --fontSizeMobileML: 25px;
-  --fontSizeMobileL: 31px;
+  --fontSizeMobileL: 31px; */
 
   /* Font weight */
   --fontNormal: 400;

@@ -11,13 +11,14 @@ const { link, variant } = Astro.props;
   }
 
   [data-variant="primary"] {
-    background: var(--ctaPrimaryBgColor);
-    color: var(--ctaPrimaryTextColor);
+    background: white;
+    color: black;
     text-decoration: none;
-    border-radius: var(--ctaPrimaryBorderRadius);
+    border: 0;
+    border-radius: 999px;
     padding: 0.8rem 2rem;
     display: inline-block;
-    font-weight: var(--fontNormal);
+    font-weight: 600;
   }
 
   [data-variant="secondary"] {

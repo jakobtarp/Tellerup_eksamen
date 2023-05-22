@@ -1,77 +1,15 @@
-/* Typography desktop */
-h1 {
-  font-size: var(--fontSizeDesktopL);
-  font-weight: var(--fontNormal);
-  line-height: var(--lineHeightsAuto);
-  letter-spacing: 0em;
-  text-align: left;
-}
-h2 {
-  font-size: var(--fontSizeDesktopML);
-  font-weight: var(--fontNormal);
-  line-height: var(--lineHeightsAuto);
-}
-h3 {
-  font-size: var(--fontSizeDesktopMd);
-  font-weight: var(--fontNormal);
-  line-height: var(--lineHeightsAuto);
-}
-h4 {
-  font-size: var(--fontSizeDesktopSm);
-  font-weight: var(--fontNormal);
-  line-height: var(--lineHeightsAuto);
-}
-p {
-  font-size: var(--fontSizeDesktopMd);
-  font-weight: var(--fontNormal);
-  line-height: var(--lineHeightsAuto);
-}
-
-/* .s {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.s-b {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.base {
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.xl-b-u {
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 41px;
-  letter-spacing: 0em;
-  text-align: left;
-} */
-
 /**
  * Do not edit directly
  * Generated on Wed, 03 May 2023 13:41:44 GMT
  */
 
-
-
- /* Original Faraos */
-/* body {
+body {
   background-color: var(--defaultBgColor);
-} */
-/* 
+}
+
 :root {
-  --red: #f2474b;
-  --green: #23bc70; 
+  --red: #f2474b; /* Udsolgt / Nyhed / Tilbudspris */
+  --green: #23bc70; /* Kurv / På lager */
   --black: #0e0f11;
   --red: #f2474b;
   --white: #ffffff;
@@ -119,7 +57,8 @@ p {
   --font3xl: 34.18px;
   --font4xl: 42.72px;
   --font5xl: 53.41px;
-
+  --fontRoboto: Roboto;
+  --fontComic: Comic Neue;
   --leadingTight: 1.2;
   --leadingDefault: 1.5;
   --leadingLoose: 1.8;
@@ -169,4 +108,4 @@ p {
   --3xlFontSize: 34.18px;
   --secondaryYSpacing: 12px;
   --cardBgColor: #ffffff;
-} */
+}
